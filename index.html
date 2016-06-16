@@ -1,37 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <title>Tools by cbutakoff</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Tools by cbutakoff</title>
   </head>
-
   <body>
-    <div id="container">
-      <div class="inner">
+    <div class="wrapper">
+      <header>
+        <h1>Tools</h1>
+        <p></p>
 
-        <header>
-          <h1>Tools</h1>
-          <h2></h2>
-        </header>
+        <p class="view"><a href="https://github.com/cbutakoff/tools">View the Project on GitHub <small>cbutakoff/tools</small></a></p>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/cbutakoff/tools/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/cbutakoff/tools/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/cbutakoff/tools" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
 
-        <hr>
-
-        <section id="main_content">
-          <h1>
+        <ul>
+          <li><a href="https://github.com/cbutakoff/tools/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/cbutakoff/tools/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/cbutakoff/tools">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
 <a id="introduction-and-licensing" class="anchor" href="#introduction-and-licensing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction and licensing</h1>
 
 <p>This is a collection of different tools I had to develop.
@@ -69,14 +66,14 @@ distance = tuple[blob_id]
 
 <p>Example image (left - DT, right - red blob):</p>
 
-<p><img src="Pics/distancetransform.gif" alt="Distance Transform Image"></p>
+<p><img src="https://github.com/cbutakoff/tools/blob/master/Pics/distancetransform.gif" alt="Distance Transform Image"></p>
 
 <h2>
 <a id="fillsurfaceholes" class="anchor" href="#fillsurfaceholes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FillSurfaceHoles</h2>
 
 <p>Detects and fills holes on the surface. Currently under construction. Current version implements P. Liepa "Filling Holes in Meshes" without smoothing. To be added soon. Here's a sample result</p>
 
-<p><img src="Pics/HoleFilling.gif" alt="Hole Filling Image"></p>
+<p><img src="https://github.com/cbutakoff/tools/blob/master/Pics/HoleFilling.gif" alt="Hole Filling Image"></p>
 
 <p>Todo:</p>
 
@@ -88,16 +85,16 @@ distance = tuple[blob_id]
 <a id="lvmeshfrommri" class="anchor" href="#lvmeshfrommri" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LVMeshFromMRI</h2>
 
 <p>Creates a smoother mesh using splines longitudinally from short axis contours in MRI and a reference point.
-This was ported from VTK 5.x and needs testing. There's also a python script in <a href="Python/mri_mesh_from_contours">Python/mri_mesh_from_contours</a>. 
+This was ported from VTK 5.x and needs testing. There's also a python script in <a href="https://github.com/cbutakoff/tools/blob/master/Python/mri_mesh_from_contours">Python/mri_mesh_from_contours</a>. 
 The input shape are the landmarks in 3D. One of them is the reference point (which is either the first or the last or has a special ID). 
 Also it is possible that the IDs are used to differentiate between endocardiumn and epicardium. Check the code.
 Example reconstrautcion:</p>
 
-<p><img src="Pics/mriremesh.gif" alt="Remesh Image"></p>
+<p><img src="https://github.com/cbutakoff/tools/blob/master/Pics/mriremesh.gif" alt="Remesh Image"></p>
 
 <p>Example from the MRI corrector (only python)</p>
 
-<p><img src="Pics/mricorrector.gif" alt="Remesh Image"></p>
+<p><img src="https://github.com/cbutakoff/tools/blob/master/Pics/mricorrector.gif" alt="Remesh Image"></p>
 
 <p>Todo:</p>
 
@@ -114,7 +111,7 @@ Example reconstrautcion:</p>
 The elements are wedges aligned radially. Might have some additional requirements.
 To be verified. This was ported from VTK 5.x and needs testing. An example mesh with associate local coordinates can be seen in the following figure</p>
 
-<p><img src="Pics/volmeshbump.gif" alt="Volumetric Meshing Image"></p>
+<p><img src="https://github.com/cbutakoff/tools/blob/master/Pics/volmeshbump.gif" alt="Volumetric Meshing Image"></p>
 
 <p>Todo:</p>
 
@@ -129,7 +126,7 @@ To be verified. This was ported from VTK 5.x and needs testing. An example mesh 
 The elements are wedges aligned radially. 
 This was ported from VTK 5.x and needs testing. </p>
 
-<p><img src="Pics/layergeneration.gif" alt="Volumetric Meshing Image"></p>
+<p><img src="https://github.com/cbutakoff/tools/blob/master/Pics/layergeneration.gif" alt="Volumetric Meshing Image"></p>
 
 <p>Todo:</p>
 
@@ -146,15 +143,13 @@ This was ported from VTK 5.x and needs testing. </p>
 <a id="iristools" class="anchor" href="#iristools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>IrisTools</h2>
 
 <p>A couple of internal use tools. Probably irrelevant for anyone except myself.</p>
-        </section>
-
-        <footer>
-          Tools is maintained by <a href="https://github.com/cbutakoff">cbutakoff</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/cbutakoff">cbutakoff</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
