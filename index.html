@@ -73,16 +73,9 @@ distance = tuple[blob_id]
 <h2>
 <a id="fillsurfaceholes" class="anchor" href="#fillsurfaceholes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FillSurfaceHoles</h2>
 
-<p>Implementation similar to ReMesh. Detects and fills holes on the surface. Currently under construction. Current version implements P. Liepa "Filling Holes in Meshes" without smoothing. Here's a sample result. The smoothing does not seem to be great. Also has some suboptimal array handling and needs a revision.</p>
+<p>Implementation similar to ReMesh. Detects and fills holes on the surface. Currently under construction. Current version implements P. Liepa "Filling Holes in Meshes" without smoothing. Here's a sample result. Has 3 smoothing modes: none, inverse edge lengths and cotangent weights.</p>
 
 <p><img src="https://raw.githubusercontent.com/cbutakoff/tools/master/Pics/HoleFilling.gif" alt="Hole Filling Image"></p>
-
-<p>Todo:</p>
-
-<ul>
-<li>Reduce the amount of array copying</li>
-<li>Improve smoothing</li>
-</ul>
 
 <h2>
 <a id="lvmeshfrommri" class="anchor" href="#lvmeshfrommri" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LVMeshFromMRI</h2>
