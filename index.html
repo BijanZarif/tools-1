@@ -36,8 +36,6 @@
 <p>This is a collection of different tools I had to develop.
 Everything in this repository is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
 
-<p>The collection is in a bit of a disarray and documentation need to be improved. </p>
-
 <h1>
 <a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To do</h1>
 
@@ -73,7 +71,7 @@ distance = tuple[blob_id]
 <h2>
 <a id="fillsurfaceholes" class="anchor" href="#fillsurfaceholes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FillSurfaceHoles</h2>
 
-<p>Implementation similar to ReMesh. Detects and fills holes on the surface. Implements P. Liepa "Filling Holes in Meshes" without smoothing. Has 3 smoothing modes: none, inverse edge lengths and cotangent weights. Here's a sample result. </p>
+<p>Implementation similar to ReMesh. Detects and fills holes on the surface. Implements P. Liepa "Filling Holes in Meshes". Has 3 smoothing modes: none, inverse edge lengths and cotangent weights. Here's a sample result. </p>
 
 <p><img src="https://raw.githubusercontent.com/cbutakoff/tools/master/Pics/HoleFilling.gif" alt="Hole Filling Image"></p>
 
@@ -99,6 +97,32 @@ Example reconstrautcion:</p>
 <li>Python script was failing with the new VTK/mayavi</li>
 <li>Compilation fails with vmtk from Ubuntu 16.04 distribution. Need a replacement. For now uniform remeshing is disabled.</li>
 </ul>
+
+<h2>
+<a id="laplacebasedvolmesh" class="anchor" href="#laplacebasedvolmesh" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LaplaceBasedVolMesh</h2>
+
+<p>Generates a volumetric mesh of any structure with two boundaries.
+The elements are wedges aligned radially.
+This was ported from VTK 5.x and needs testing. Examples can be seen in the following figures.</p>
+
+<p>Please cite B. Paun, B. Bijnens, T. Iles, P. A. Iaizzo, C. Butakoff, "Patient Independent Representation of the Detailed
+Cardiac Ventricular Anatomy", Medical Image Analysis, Accepted 2016.</p>
+
+<p><img src="https://raw.githubusercontent.com/cbutakoff/tools/master/Pics/volmeshbump.gif" alt="Volumetric Meshing Image">
+<img src="https://raw.githubusercontent.com/cbutakoff/tools/master/Pics/layergeneration.gif" alt="Volumetric Meshing Image"></p>
+
+<p>Todo:</p>
+
+<ul>
+<li>Test</li>
+</ul>
+
+<h1>
+<a id="zerike-decomposition" class="anchor" href="#zerike-decomposition" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Zerike Decomposition</h1>
+
+<p>2D Zernike Decomposition/Reconstruction of an image using multi-precision arithmetics. Optimized for running on a cluster. Programmed together with Arnau Vallve: <a href="https://www.linkedin.com/in/arnauvallve">https://www.linkedin.com/in/arnauvallve</a></p>
+
+<p><img src="https://raw.githubusercontent.com/cbutakoff/tools/master/Pics/zernike2d.jpg" alt="Volumetric Meshing Image"></p>
 
 <h2>
 <a id="matlab" class="anchor" href="#matlab" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Matlab</h2>
